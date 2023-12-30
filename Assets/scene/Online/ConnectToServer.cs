@@ -34,13 +34,13 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
         
     }
 
-    /*public void CreatefRoom(string name)
+    public void CreatefRoom(string name)
     {
         Debug.Log("created");
         RoomOptions roomOptions = new RoomOptions();
         roomOptions.MaxPlayers = 4;
         PhotonNetwork.CreateRoom(name, roomOptions);
-    }*/
+    }
 
     // Update is called once per frame
     void Update()
