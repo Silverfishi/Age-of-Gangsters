@@ -10,5 +10,6 @@ public class staronlinegame : MonoBehaviour
     {
        SceneManager.LoadScene("loading");
     }
+    //кукуха едет к сну
 
 }
