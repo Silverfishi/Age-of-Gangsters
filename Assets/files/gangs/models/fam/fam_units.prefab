@@ -1702,7 +1702,7 @@ GameObject:
   - component: {fileID: 1554725243824148273}
   m_Layer: 0
   m_Name: fam_units
-  m_TagString: Untagged
+  m_TagString: Unit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

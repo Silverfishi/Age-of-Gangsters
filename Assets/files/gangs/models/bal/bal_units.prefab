@@ -1435,7 +1435,7 @@ GameObject:
   - component: {fileID: 7520698367705555468}
   m_Layer: 0
   m_Name: bal_units
-  m_TagString: Untagged
+  m_TagString: Unit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
