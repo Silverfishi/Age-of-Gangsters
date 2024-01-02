@@ -14,7 +14,7 @@ public class grid_generator : MonoBehaviour
         {
             for (int y = 0; y < grid_size.y; y++)
             {
-                var position = new Vector3(x * 10, 0, y * 10);
+                var position = new Vector3(x * 20, 0, y * 20);
                 var cell = Instantiate(prefab, position, Quaternion.identity);
                 cell.name = $"square X:{x} Y:{y}";
             }
