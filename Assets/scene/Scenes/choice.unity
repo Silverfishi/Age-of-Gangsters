@@ -313,7 +313,7 @@ Transform:
   m_GameObject: {fileID: 193695554}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3, y: -12.4, z: 1}
+  m_LocalPosition: {x: -620.27, y: 78.88266, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -488,10 +488,11 @@ Transform:
   m_GameObject: {fileID: 476331780}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.1379108, y: -13.282663, z: 7.159916}
+  m_LocalPosition: {x: -619, y: 78, z: 7.159916}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1119421547}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &826624338
@@ -589,7 +590,7 @@ GameObject:
   - component: {fileID: 995459399}
   - component: {fileID: 995459398}
   m_Layer: 5
-  m_Name: Next (2)
+  m_Name: Shoice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -658,7 +659,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 995459399}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1119421548}
+        m_TargetAssemblyTypeName: choisegang, Assembly-CSharp
+        m_MethodName: choise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &995459399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,7 +792,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1090217777}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1119421548}
+        m_TargetAssemblyTypeName: choisegang, Assembly-CSharp
+        m_MethodName: NextUnit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1090217777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -827,8 +852,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1119421547}
+  - component: {fileID: 1119421548}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Spawn point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -843,12 +869,31 @@ Transform:
   m_GameObject: {fileID: 1119421546}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 346.226, y: 64.5402, z: -0.31834108}
+  m_LocalPosition: {x: -2.18, y: -0.9, z: -2.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 476331784}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1119421548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119421546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008e9ade8dab9bb4699ed8e68f75449c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjectArray:
+  - {fileID: 7397540355731972109, guid: 9b9720774a9644448b481313a9eef374, type: 3}
+  - {fileID: 9110629747098662117, guid: 63c8a27757722674fbf9008ec55ca216, type: 3}
+  - {fileID: 3965102684814285769, guid: f0a237de95252bb4b81a54a63537e0e7, type: 3}
+  - {fileID: 4950659447861972046, guid: 8a65706b6cade3e4c98e89ae7cd6c896, type: 3}
+  id: 0
+  spawnpoint: {fileID: 1119421547}
 --- !u!1 &1286032418
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,7 +907,7 @@ GameObject:
   - component: {fileID: 1286032421}
   - component: {fileID: 1286032420}
   m_Layer: 5
-  m_Name: Next (1)
+  m_Name: Previous
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -931,7 +976,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1286032421}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1119421548}
+        m_TargetAssemblyTypeName: choisegang, Assembly-CSharp
+        m_MethodName: Previous
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1286032421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1235,4 +1292,3 @@ SceneRoots:
   - {fileID: 1839265925}
   - {fileID: 476331784}
   - {fileID: 438961772}
-  - {fileID: 1119421547}
