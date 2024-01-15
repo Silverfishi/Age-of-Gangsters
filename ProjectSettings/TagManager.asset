@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bullet
+  - Unit
+  - Plane
+  - Triger
+  - Point
   layers:
   - Default
   - TransparentFX
