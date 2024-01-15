@@ -5,7 +5,7 @@ using UnityEngine;
 public class test : MonoBehaviour
 {
     public int speed = 2;
-    public GameObject objectToSpawn;
+    
     public bool flag = false;
     public List<GameObject> Listplayer;
     void Update()
