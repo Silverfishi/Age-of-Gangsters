@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Bullet
   - Unit
+  - Plane
+  - Triger
+  - Point
   layers:
   - Default
   - TransparentFX
